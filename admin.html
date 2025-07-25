@@ -1,4 +1,4 @@
-can<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,8 +28,7 @@ can<!DOCTYPE html>
     <main class="container">
         <h2>Admin Dashboard</h2>
 
-        <section class="admin-section" id="manage-products">
-            <h3>Manage Products</h3>
+        <section class="admin-section" id="manage-products">\n            <h3>Manage Products</h3>
             <button id="add-product-btn">Add New Product</button>
             <div id="add-product-form" class="hidden">
                 <!-- Product Add/Edit Form will be here -->
@@ -65,7 +64,7 @@ can<!DOCTYPE html>
                         <th>Actions</th>
                     </tr>
                 </thead>
-                 <tbody>
+                 <tbody id="artistTableBody">
                     <!-- Artist data will be loaded here by JavaScript -->
                 </tbody>
             </table>
@@ -82,7 +81,7 @@ can<!DOCTYPE html>
                         <th>Actions</th>
                     </tr>
                 </thead>
-                 <tbody>
+                 <tbody id="userTableBody">
                     <!-- User data will be loaded here by JavaScript -->
                 </tbody>
             </table>
