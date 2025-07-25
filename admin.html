@@ -1,0 +1,121 @@
+can<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Haven - Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="images/logo.png" alt="Logo" class="logo-img" />
+                Handmade Haven Admin
+            </h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="store.html"><i class="fas fa-store"></i> Store</a></li>
+                    <li><a href="artists.html"><i class="fas fa-users"></i> Artists</a></li>
+                    <li><a href="login.html" id="logout-link"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Admin Dashboard</h2>
+
+        <section class="admin-section" id="manage-products">
+            <h3>Manage Products</h3>
+            <button id="add-product-btn">Add New Product</button>
+            <div id="add-product-form" class="hidden">
+                <!-- Product Add/Edit Form will be here -->
+            </div>
+            <table id="products-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Artist</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Product data will be loaded here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="admin-section" id="manage-artists">
+            <h3>Manage Artists</h3>
+            <button id="add-artist-btn">Add New Artist</button>
+             <div id="add-artist-form" class="hidden">
+                <!-- Artist Add/Edit Form will be here -->
+            </div>
+            <table id="artists-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Bio</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                 <tbody>
+                    <!-- Artist data will be loaded here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="admin-section" id="manage-users">
+            <h3>Manage Users</h3>
+             <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                 <tbody>
+                    <!-- User data will be loaded here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="admin-section" id="manage-orders">
+            <h3>Manage Orders</h3>
+             <table id="orders-table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                         <th>Actions</th>
+                    </tr>
+                </thead>
+                 <tbody>
+                    <!-- Order data will be loaded here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Handmade Haven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-firestore-compat.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
